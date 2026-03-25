@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
 
     margin: 0;
@@ -302,22 +306,26 @@ footer {
 
 }
 
-.container-aula {
-
+.layout-imagem {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 20px;
-    padding: 0px 40px;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px
+}
 
+.cabeçalho {
+    flex: 2;
+}
+
+.img-aula1 {
+    flex: 1;
 }
 
 .imagem-relatorio {
 
     width: 100%;
-    max-width: 600px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    height: auto;
 
 }
