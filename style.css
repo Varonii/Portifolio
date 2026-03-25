@@ -1,0 +1,323 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0E9;
+
+}
+
+h1, h2 {
+
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    line-height: 42px;
+
+}
+
+h3, p, a, li, .badge-title{
+
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+
+    background-color: #EEF0E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 10;
+
+}
+
+nav {
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.navbtn {
+
+    text-decoration: none;
+    color: #1a2e35;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: 400;
+
+}
+
+.navbtn:hover {
+
+    color: darkslategray;
+    opacity: 0.7;
+
+}
+
+.contato-bold {
+
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.voltar {
+
+    margin-top: -50px;
+    margin-bottom: 40px;
+    margin-left: 40px;   
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 16px;
+    color: #1a2e35;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+}
+
+
+.voltar i {
+
+    opacity: 0;
+    width: 0;
+    margin-right: 0;
+    transform: translateX(-15px);
+    transition: all 0.4s ease;
+
+}
+
+.voltar span {
+
+    transition: all 0.4s ease;
+    
+}
+
+.voltar:hover i {
+
+    opacity: 1;
+    width: 20px;
+    margin-right: 8px;
+    transform: translateX(0);
+    
+}
+
+.voltar:hover span {
+
+    color: #1a2e35;     
+
+}
+
+main {
+
+    background-color: #EEF0E9;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.badge-title {
+
+    display: inline-block;
+    align-self: flex-start;
+    color: #1a2e35;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14;
+    border: #1a2e35 3.4px solid;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 5px;
+    line-height: -o.12px;
+
+}
+
+h1, h2 {
+
+    font-size: 35px;
+    color: #1a2e35;
+    margin-top: 20px;
+
+}
+
+h3 {
+
+    color: #003869;
+    margin-top: 15px;
+    font-weight: 600;
+
+}
+
+li {
+
+    font-size: 17px;
+    margin-bottom: 8px;
+
+}
+
+#sobremim {
+
+    background-color: #DBE3EA;
+    display: flex;
+    flex-direction: column;
+    border: 0px #DBE3EA;
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: -60px;
+    margin-right: -60px;
+
+}
+
+.projetos {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.projetos-esquerda {
+
+
+    width: 50%;
+    padding-bottom: 550px;
+
+}
+
+.projetos-direita {
+
+    padding-left: 800px;
+    padding-right: 00px;
+    width: 150%;
+
+}
+
+#contato {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#contato .badge-title {
+
+    align-self: center;
+    margin-left: 0;
+
+}
+
+.contato-botoes {
+
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+
+}
+
+.contato-botoes button {
+
+    color: #EEF0E9;
+    border-radius: 20px;
+    background-color: #1a2e35;
+    border: 3px solid #1a2e35;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.contato-botoes a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    color: #EEF0E9;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.contato-botoes button:hover {
+
+    background-color: #EEF0E9;
+
+}
+
+.contato-botoes a:hover {
+
+    color: #1a2e35;
+    
+}
+
+footer {
+
+    background-color: #DDE6ED; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px; 
+    margin-top: 60px; 
+
+}
+
+.copyright {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1a2e35;
+    margin: 0;
+
+}
+
+.footer-github {
+
+    text-decoration: none;
+    color: #1a2e35;
+    font-family: 'Anton', sans-serif; 
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+.footer-github:hover {
+
+    opacity: 0.7;
+
+}
+
+.container-aula {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 40px;
+
+}
+
+.imagem-relatorio {
+
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: auto;
+
+}
