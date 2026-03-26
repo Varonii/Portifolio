@@ -307,18 +307,24 @@ footer {
 }
 
 .layout-imagem {
+
     display: flex;
     align-items: flex-start;
     gap: 50px;
     margin-top: 20px
+
 }
 
 .cabeçalho {
+
     flex: 2;
+
 }
 
 .img-aula1 {
+
     flex: 1;
+
 }
 
 .imagem-relatorio {
@@ -327,5 +333,15 @@ footer {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+.botoes-aulas {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
 
 }
