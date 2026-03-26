@@ -339,9 +339,12 @@ footer {
 .botoes-aulas {
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    flex-direction: column;
-
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 5px;
+    border: rgba(0,0,0,0.25);
+    border-radius: 20px;
+    padding: 60px, 30px;
+    margin: 30px;
+    
 }
