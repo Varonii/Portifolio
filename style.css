@@ -339,12 +339,20 @@ footer {
 .botoes-aulas {
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.carda-aula {
+
+    display: flex;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    border: 2px solid rgba(0,0,0,0.25);
     text-decoration: none;
-    cursor: pointer;
-    border-width: 5px;
-    border: rgba(0,0,0,0.25);
-    border-radius: 20px;
-    padding: 60px, 30px;
-    margin: 30px;
-    
+    background-color: lightgrey;
+
 }
