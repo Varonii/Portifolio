@@ -364,10 +364,16 @@ footer {
 
 */
 
+.botoes-aulas {
+
+    gap: 30px;
+
+}
+
 .card-aula {
     display: flex;
-    width: 600px;
-    height: 200px;
+    width: 800px;
+    height: 1500px;
     border: 2px solid rgba(0,0,0,0.25);
     border-radius: 30px;
     text-decoration: none;
@@ -419,7 +425,7 @@ footer {
 
 .card-aula:hover .capa-quadrada {
     /* No hover, a capa vira um quadrado no canto esquerdo */
-    flex: 0 0 200px; 
+    flex: 0 0 150px; 
 }
 
 .card-aula:hover .conteudo-revelado {
