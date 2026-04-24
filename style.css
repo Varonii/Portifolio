@@ -421,7 +421,7 @@ footer {
 }
 
 .texto-botao {
-    background-color: rgba(0, 0, 0, 0.7); /* Faixa preta semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     text-align: center;
     padding: 10px;
@@ -442,3 +442,27 @@ footer {
 
 }
 
+.introducao-conteiner {
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;                        
+    text-align: left;
+
+}
+
+.introducao-texto {
+
+    flex: 1;
+
+}
+
+.introducao-imagem img {
+
+    width: 380px;      
+    height: 450px;     
+    object-fit: cover; 
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
