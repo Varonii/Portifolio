@@ -1,3 +1,114 @@
+/*
+* { box-sizing: border-box;}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #eef0e9;
+
+}
+
+h1, h2 {
+
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-size: 28px;
+    color: #1a2e35;
+    margin-top: 20px;
+
+}
+
+header {
+
+    background-color: #eef0e9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+nav {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+main {
+    
+    padding: 40px, 20px;
+
+}
+
+#sobremim {
+
+    background-color: #dbe3ea;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 40px, 0;
+
+}
+
+.introducao-conteiner, .layout-imagem, .projetos {
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+
+}
+
+.introuducao-imagem img {
+
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+
+}
+
+footer {
+
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 1024px) {
+
 * {
     box-sizing: border-box;
 }
@@ -336,14 +447,12 @@ footer {
 
 }
 
-
-
 .botoes-aulas {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     gap: 40px;
 
 }
@@ -351,8 +460,8 @@ footer {
 .card-aula {
 
     display: flex;
-    width: 500px;
-    height: 100px;
+    width: 800px;
+    height: 80px;
     position: relative;
     overflow: hidden;
     border-radius: 30px;
@@ -360,6 +469,8 @@ footer {
     background-color: lightgrey;
     color: inherit;
     overflow: hidden;
+    margin-bottom: px;
+    margin-top: 10px;
 
 }
 
@@ -442,6 +553,13 @@ footer {
 
 }
 
+.img-aula4 {
+
+    width: 35%;
+    height: 35%;
+
+}
+
 .introducao-conteiner {
 
     display: flex;
@@ -465,4 +583,5 @@ footer {
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 
+}
 }
