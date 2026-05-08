@@ -294,27 +294,66 @@ li {
 }
 
 .projetos {
+    display: grid;
+    /* Coluna 1 e 2 (botões), Coluna 3 (30% para o texto) */
+    grid-template-columns: 1fr 1fr 0.8fr;
+    /* Cria duas linhas de altura igual */
+    grid-template-rows: 120px 120px 120px; 
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
+.link-projeto {
+    text-decoration: none;
+    color: inherit;
+}
+
+.botao-projetosA {
+    
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    border: 2px solid #003869;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.botao-projetosB {
+
+    grid-row: 1 / span 2;
+    grid-column: 2 ;
+    border: 2px solid #003869;
+    padding: 5px;
+    border-radius: 10px;
 
 }
 
-.projetos-esquerda {
+.botao-projetosC {
 
-
-    width: 50%;
-    padding-bottom: 550px;
+    grid-row: 3;
+    grid-column: 2;
+    border: 2px solid #003869;
+    padding: 5px;
+    border-radius: 10px;
 
 }
 
-.projetos-direita {
+.projetos-texto {
 
-    padding-left: 800px;
-    padding-right: 00px;
-    width: 150%;
+    grid-row: 1 ; 
+    grid-column: 3; 
+    padding-left: 20px;
+    
+}
+
+.titulo-projetos {
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Anton', sans-serif; 
+    font-size: 22px;
 
 }
 
