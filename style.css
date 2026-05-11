@@ -492,6 +492,14 @@ footer {
 
 }
 
+/* Estilos para a página Londrinense Tech */
+.conteudo-principal {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 .layout-imagem {
 
     display: flex;
@@ -519,6 +527,35 @@ footer {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+ /* Estilos para a página de aulas Londrinense Tech */
+
+.conteudo-principal {
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 50px;
+
+}
+
+.texto-conteudo-principal {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.imagens-conteudo-principal {
+
+    display: flex;
+    flex-direction: row;
+    width: 52%;
+    height: 30%;
+    border-radius: 250px;
+    margin-top: 50px;
 
 }
 
