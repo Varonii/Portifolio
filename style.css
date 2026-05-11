@@ -329,7 +329,7 @@ li {
     border: 0px;
     border-radius: 20px;
     /* imagem de fundo do botão */
-    background-image: url(/Imagens/fundo_botao1.jpg);
+    background-image: url(Imagens/fundo_botao1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,7 +345,7 @@ li {
     border: 0px;
     border-radius: 20px;
     /* imagem de fundo do botão */
-    background-image: url(/Imagens/fundo_botao2.jpg);
+    background-image: url(Imagens/fundo_botao2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ li {
     border: 0px;
     border-radius: 20px;
     /* imagem de fundo do botão */
-    background-image: url(/Imagens/fundo_botao3.jpg);
+    background-image: url(Imagens/fundo_botao3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
