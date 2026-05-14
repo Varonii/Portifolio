@@ -1,0 +1,77 @@
+/* Estilos para a página de aulas Londrinense Tech */
+
+.voltar {
+
+    margin-top: -50px;
+    margin-bottom: 40px;
+    margin-left: 40px;   
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 16px;
+    color: #1a2e35;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+}
+
+.voltar i {
+
+    opacity: 0;
+    width: 0;
+    margin-right: 0;
+    transform: translateX(-15px);
+    transition: all 0.4s ease;
+
+}
+
+.voltar span {
+
+    transition: all 0.4s ease;
+    
+}
+
+.voltar:hover i {
+
+    opacity: 1;
+    width: 20px;
+    margin-right: 8px;
+    transform: translateX(0);
+    
+}
+
+.voltar:hover span {
+
+    color: #1a2e35;     
+
+}
+
+.layout-relatorio {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px
+
+}
+
+.text-part {
+    flex: 2;
+}
+.img-part {
+    flex: 1;
+}
+
+.img-tam {
+    width: 35%;
+    height: 35%;
+}
+
+.imagem-relatorio {
+
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}

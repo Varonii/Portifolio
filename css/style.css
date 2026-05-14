@@ -1,0 +1,165 @@
+@media (min-width: 1024px) {
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0E9;
+
+}
+
+h1, h2 {
+
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    line-height: 42px;
+
+}
+
+h3, p, a, li, .badge-title{
+
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+
+    background-color: #EEF0E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 10;
+
+}
+
+main {
+
+    background-color: #EEF0E9;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+nav {
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.navbtn {
+
+    text-decoration: none;
+    color: #1a2e35;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: 400;
+
+}
+
+.navbtn:hover {
+
+    color: darkslategray;
+    opacity: 0.7;
+
+}
+
+.contato-bold {
+
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.badge-title {
+
+    display: inline-block;
+    align-self: flex-start;
+    color: #1a2e35;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14;
+    border: #1a2e35 3.4px solid;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 5px;
+    line-height: -o.12px;
+
+}
+
+h1, h2 {
+
+    font-size: 35px;
+    color: #1a2e35;
+    margin-top: 20px;
+
+}
+
+h3 {
+
+    color: #003869;
+    margin-top: 15px;
+    font-weight: 600;
+
+}
+
+li {
+
+    font-size: 17px;
+    margin-bottom: 8px;
+
+}
+
+footer {
+
+    background-color: #DDE6ED; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px; 
+    margin-top: 60px; 
+
+}
+
+.copyright {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1a2e35;
+    margin: 0;
+
+}
+
+.footer-github {
+
+    text-decoration: none;
+    color: #1a2e35;
+    font-family: 'Anton', sans-serif; 
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+.footer-github:hover {
+
+    opacity: 0.7;
+
+}
+
+}
