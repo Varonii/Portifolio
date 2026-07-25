@@ -90,31 +90,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });`
 `
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. Pega os parâmetros da URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const secaoParaRolar = urlParams.get('scroll');
-
-  // 2. Se encontrou o parâmetro ?scroll=na URL:
-  if (secaoParaRolar) {
-    const elementoDestino = document.getElementById(secaoParaRolar);
-
-    if (elementoDestino) {
-      // Pequeno delay para garantir que a página renderizou tudo
-      setTimeout(() => {
-        const headerOffset = 80; // Altura do seu menu fixo
-        const elementPosition = elementoDestino.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        // Faz a rolagem suave vindo do topo!
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-
-        // Limpa a URL pra não ficar o "?scroll=sobre-mim" aparente na barra do navegador
-        window.history.replaceState({}, document.title, window.location.pathname);
-      }, 300);
-    }
-  }
-});
