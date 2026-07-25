@@ -2,13 +2,13 @@
 
 .voltar {
 
-    margin-top: -50px;
-    margin-bottom: 40px;
-    margin-left: 40px;   
+    margin-top: -5rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;   
     display: flex;
     align-items: center;
     width: fit-content;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #1a2e35;
     text-decoration: none;
     transition: all 0.4s ease;
@@ -20,7 +20,7 @@
     opacity: 0;
     width: 0;
     margin-right: 0;
-    transform: translateX(-15px);
+    transform: translateX(-1.5rem);
     transition: all 0.4s ease;
 
 }
@@ -34,8 +34,8 @@
 .voltar:hover i {
 
     opacity: 1;
-    width: 20px;
-    margin-right: 8px;
+    width: 2rem;
+    margin-right: .8rem;
     transform: translateX(0);
     
 }
@@ -50,8 +50,8 @@
 
     display: flex;
     align-items: flex-start;
-    gap: 50px;
-    margin-top: 20px
+    gap: 5rem;
+    margin-top: 2rem
 
 }
 
@@ -71,7 +71,7 @@
 
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 2rem;
+    box-shadow: 0 .4rem 1.5rem rgba(0,0,0,0.1);
 
 }

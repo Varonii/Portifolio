@@ -1,68 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
 .lista-projetos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 .card-projetos {
   position: relative;
   background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #e0e0e0;
+  border-radius: 1.6rem;
+  border: .1rem solid #e0e0e0;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
 }
 
 .card-projetos:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-0.8rem);
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.12);
 }
 
 .card-projetos img {
   width: 100%;
-  height: 220px;
+  height: 22rem;
   object-fit: cover;
   display: block;
   background-color: #f0f0f0;
 }
 
 .conteudo-card-projetos {
-  padding: 24px;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .conteudo-card-projetos h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #1a1a1a;
   margin: 0;
 }
 
 .descricao-do-projeto {
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: #666666;
   line-height: 1.5;
   margin: 0;
 }
 
 .project-button {
-  margin-top: 8px;
+  margin-top: .8rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: .8rem;
   background-color: #1a2e35;
   color: #ffffff;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 1.2rem 2rem;
+  border-radius: .8rem;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   width: 100%;
   box-sizing: border-box;
   text-decoration: none;
@@ -75,6 +79,6 @@
 }
 
 .card-projetos:hover .project-button span {
-  transform: translateX(4px);
+  transform: translateX(.4rem);
   transition: transform 0.2s ease;
 }
