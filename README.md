@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/github/license/Varonii/Portifolio?style=for-the-badge" alt="Licença">
   <img src="https://img.shields.io/github/last-commit/Varonii/Portifolio?style=for-the-badge" alt="Último Commit">
 </p>
 
