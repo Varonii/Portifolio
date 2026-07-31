@@ -166,3 +166,42 @@ footer {
     opacity: 0.7;
 
 }
+
+@media (max-width: 768px) {
+    /* Ajuste de espaçamentos gerais da tela */
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .navbtn {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+    }
+
+    /* Rodapé ajustado para empilhar */
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+}

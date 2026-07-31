@@ -210,3 +210,96 @@
     color: #1a2e35;
     
 }
+
+/* ==========================================
+   RESPONSIVIDADE DA HOMEPAGE (MOBILE)
+   ========================================== */
+   @media (max-width: 768px) {
+    /* Menu na mesma linha */
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .navbtn {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+
+    /* Introdução: Texto primeiro, Foto no meio logo abaixo */
+    .introducao-conteiner {
+        display: flex;
+        flex-direction: column; /* Empilha o texto e a foto na vertical */
+        align-items: center;    /* Centraliza os elementos */
+        text-align: left;       /* Mantém a leitura do texto alinhada à esquerda */
+        gap: 3rem;
+    }
+
+    .introducao-texto {
+        width: 100%;
+    }
+
+    .introducao-imagem {
+        display: flex;
+        justify-content: center; /* Centraliza a imagem no meio da tela */
+        width: 100%;
+    }
+
+    .introducao-imagem img {
+        width: 80%;           /* Ocupa a maior parte da largura da tela */
+        max-width: 32rem;     /* Não deixa a foto ficar gigante */
+        height: auto;         /* Mantém a proporção correta da imagem */
+        border-radius: 2rem;
+    }
+
+    /* Secção Sobre Mim */
+    #sobremim {
+        padding: 2rem;
+        border-radius: 2.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    /* Secção Projetos: Altera o Grid para 1 coluna vertical */
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projetos-texto {
+        padding-left: 0;
+        order: -1;
+    }
+
+    .botao-projetosA, 
+    .botao-projetosB, 
+    .botao-projetosC {
+        height: 18rem;
+        width: 100%;
+    }
+
+    /* Secção Contato */
+    .contato-botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    .contato-botoes button {
+        width: 100%;
+    }
+
+    .contato-botoes a {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+}

@@ -82,3 +82,56 @@ html {
   transform: translateX(.4rem);
   transition: transform 0.2s ease;
 }
+
+/* ==========================================
+   RESPONSIVIDADE DA PÁGINA PROJETOS (MOBILE)
+   ========================================== */
+   @media (max-width: 768px) {
+    /* Ajuste da seção de introdução */
+    #introducao {
+        text-align: left;
+    }
+
+    #introducao h1.titulo-projetos {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Grid de Projetos: 1 coluna no celular */
+    .lista-projetos {
+        grid-template-columns: 1fr; /* Força 1 card por linha */
+        padding: 2rem 0;            /* Remove padding lateral extra pra aproveitar a tela */
+        gap: 2.5rem;
+    }
+
+    /* Ajuste da altura das imagens dos cards */
+    .card-projetos img {
+        height: 18rem;
+    }
+
+    /* Ajuste do conteúdo interno dos cards */
+    .conteudo-card-projetos {
+        padding: 1.8rem;
+    }
+
+    .conteudo-card-projetos h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Remove as quebras de linha (<br>) no celular pra nao esticar o card à toa */
+    .descricao-do-projeto br {
+        display: none;
+    }
+
+    .descricao-do-projeto {
+        font-size: 1.35rem;
+    }
+
+    /* Botão "Ver Projeto" tocável e destacado */
+    .project-button {
+        padding: 1.4rem;
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+    }
+}
