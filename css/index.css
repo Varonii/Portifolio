@@ -1,6 +1,5 @@
 /* Estilos para a index.html */
 
-/* Estilos para introdução */
 .introducao-conteiner {
 
     display: flex;
@@ -28,7 +27,6 @@
 
 }
 
-/* Estilos para sobre mim */
 #sobremim {
 
     font-size: 110%;
@@ -43,8 +41,6 @@
     box-shadow: 0 .4rem 1.5rem rgba(0,0,0,0.1);
 
 }
-
-/* Estilos para projetos */
 
 .projetos {
 
@@ -82,7 +78,6 @@
     grid-column: 1;
     border: 0rem;
     border-radius: 2rem;
-    /* imagem de fundo do botão */
     background-image: url('../Imagens/fundo_botao1.jpg');
     background-size: cover;
     background-position: center;
@@ -98,7 +93,6 @@
     grid-column: 2 ;
     border: 0rem;
     border-radius: 2rem;
-    /* imagem de fundo do botão */
     background-image: url('../Imagens/fundo_botao2.jpg');
     background-size: cover;
     background-position: center;
@@ -114,7 +108,6 @@
     grid-column: 2;
     border: 0rem;
     border-radius: 2rem;
-    /* imagem de fundo do botão */
     background-image: url('../Imagens/fundo_botao3.jpg');
     background-size: cover;
     background-position: center;
@@ -146,8 +139,6 @@
     font-size: 2.7rem;
 
 }
-
-/* Estilos para contatos */
 
 #contato {
 
@@ -215,7 +206,7 @@
    RESPONSIVIDADE DA HOMEPAGE (MOBILE)
    ========================================== */
    @media (max-width: 768px) {
-    /* Menu na mesma linha */
+    
     header {
         padding: 1.5rem 1rem;
     }
@@ -233,12 +224,11 @@
         white-space: nowrap;
     }
 
-    /* Introdução: Texto primeiro, Foto no meio logo abaixo */
     .introducao-conteiner {
         display: flex;
-        flex-direction: column; /* Empilha o texto e a foto na vertical */
-        align-items: center;    /* Centraliza os elementos */
-        text-align: left;       /* Mantém a leitura do texto alinhada à esquerda */
+        flex-direction: column; 
+        align-items: center;
+        text-align: left;
         gap: 3rem;
     }
 
@@ -248,18 +238,17 @@
 
     .introducao-imagem {
         display: flex;
-        justify-content: center; /* Centraliza a imagem no meio da tela */
+        justify-content: center;
         width: 100%;
     }
 
     .introducao-imagem img {
-        width: 80%;           /* Ocupa a maior parte da largura da tela */
-        max-width: 32rem;     /* Não deixa a foto ficar gigante */
-        height: auto;         /* Mantém a proporção correta da imagem */
+        width: 80%;
+        max-width: 32rem;
+        height: auto;
         border-radius: 2rem;
     }
 
-    /* Secção Sobre Mim */
     #sobremim {
         padding: 2rem;
         border-radius: 2.5rem;
@@ -267,7 +256,6 @@
         margin-bottom: 4rem;
     }
 
-    /* Secção Projetos: Altera o Grid para 1 coluna vertical */
     .projetos {
         display: flex;
         flex-direction: column;
@@ -286,7 +274,6 @@
         width: 100%;
     }
 
-    /* Secção Contato */
     .contato-botoes {
         flex-direction: column;
         width: 100%;

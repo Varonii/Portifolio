@@ -168,7 +168,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Ajuste de espaçamentos gerais da tela */
+
     header {
         flex-direction: column;
         gap: 1.5rem;
@@ -197,7 +197,6 @@ footer {
         line-height: 3.4rem;
     }
 
-    /* Rodapé ajustado para empilhar */
     footer {
         flex-direction: column;
         gap: 1.5rem;
