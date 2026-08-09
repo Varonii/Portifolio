@@ -17,6 +17,57 @@
 
 //smooth scroll para sobre mim no index.html
 document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+
+    if (header) {
+        const existingToggle = header.querySelector('.menu-toggle');
+
+        if (!existingToggle) {
+            const toggleButton = document.createElement('button');
+            toggleButton.className = 'menu-toggle';
+            toggleButton.type = 'button';
+            toggleButton.setAttribute('aria-label', 'Abrir menu');
+            toggleButton.setAttribute('aria-expanded', 'false');
+            toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            header.insertBefore(toggleButton, header.firstChild);
+        }
+
+        const toggleButton = header.querySelector('.menu-toggle');
+        const navs = Array.from(header.querySelectorAll('nav'));
+
+        const closeMenu = () => {
+            header.classList.remove('active');
+            toggleButton.setAttribute('aria-expanded', 'false');
+            toggleButton.setAttribute('aria-label', 'Abrir menu');
+            toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        };
+
+        toggleButton.addEventListener('click', () => {
+            const isOpen = header.classList.toggle('active');
+            toggleButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            toggleButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+            toggleButton.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        navs.forEach(nav => {
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        closeMenu();
+                    }
+                });
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+    }
+
     const linkSobreMim = document.querySelector('a[href^="#sobremim"]');
 
     if (linkSobreMim) {

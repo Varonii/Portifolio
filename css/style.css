@@ -63,6 +63,21 @@ nav {
 
 }
 
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 999px;
+    background-color: #1a2e35;
+    color: #EEF0E9;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0;
+}
+
 .navbtn {
 
 
@@ -186,23 +201,84 @@ footer {
 
     header {
         flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.5rem 2rem;
+        gap: 0.6rem;
+        padding: 0.6rem 1.2rem 0.8rem;
         text-align: center;
+        align-items: stretch;
+        overflow: hidden;
+        transition: padding 0.25s ease;
+        box-shadow: none;
+        border-bottom: none;
+    }
+
+    header.active {
+        padding-bottom: 1.8rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+        box-shadow: 0 .4rem 1rem rgba(26, 46, 53, 0.2);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .menu-toggle:hover {
+        background-color: #233f49;
+        transform: translateY(-1px);
+    }
+
+    .menu-toggle:active {
+        transform: scale(0.96);
     }
 
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transform: translateY(-0.8rem);
+        transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+        padding: 0;
+    }
+
+    header.active nav {
+        max-height: 24rem;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        padding: 0.2rem 0 0.4rem;
     }
 
     .navbtn {
         font-size: 1.6rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 24rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: 999px;
+        background-color: rgba(26, 46, 53, 0.06);
+        transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+    }
+
+    .navbtn:hover {
+        background-color: rgba(26, 46, 53, 0.12);
+        transform: translateY(-1px);
+    }
+
+    .contato-bold {
+        background-color: #1a2e35;
+        color: #EEF0E9;
     }
 
     main {
-        padding-top: 3rem;
+        padding-top: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
