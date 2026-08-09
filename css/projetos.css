@@ -84,9 +84,20 @@ html {
 }
 
 /* ==========================================
-   RESPONSIVIDADE DA PÁGINA PROJETOS (MOBILE)
+   RESPONSIVIDADE DA PÁGINA PROJETOS
    ========================================== */
-   @media (max-width: 768px) {
+   @media (max-width: 1024px) {
+    .lista-projetos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 3rem 0;
+    }
+
+    .card-projetos img {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
 
     #introducao {
         text-align: left;
@@ -128,5 +139,19 @@ html {
         padding: 1.4rem;
         font-size: 1.5rem;
         margin-top: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #introducao h1.titulo-projetos {
+        font-size: 2.4rem;
+    }
+
+    .conteudo-card-projetos {
+        padding: 1.5rem;
+    }
+
+    .project-button {
+        font-size: 1.4rem;
     }
 }

@@ -203,27 +203,60 @@
 }
 
 /* ==========================================
-   RESPONSIVIDADE DA HOMEPAGE (MOBILE)
+   RESPONSIVIDADE DA HOMEPAGE
    ========================================== */
-   @media (max-width: 768px) {
-    
-    header {
-        padding: 1.5rem 1rem;
+   @media (max-width: 1024px) {
+    .introducao-conteiner {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
     }
 
-    nav {
+    .introducao-texto {
+        width: 100%;
+        font-size: 120%;
+    }
+
+    .introducao-imagem {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        gap: 1rem;
+        justify-content: center;
         width: 100%;
     }
 
-    .navbtn {
-        font-size: 1.4rem;
-        white-space: nowrap;
+    .introducao-imagem img {
+        width: 38rem;
+        height: auto;
     }
 
+    .projetos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .projetos-texto {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        padding-left: 0;
+    }
+
+    .botao-projetosA {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    .botao-projetosB {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .botao-projetosC {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    
     .introducao-conteiner {
         display: flex;
         flex-direction: column; 
@@ -288,5 +321,25 @@
         width: 100%;
         padding: 1.2rem;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .introducao-texto {
+        font-size: 1.1rem;
+    }
+
+    .introducao-imagem img {
+        width: 100%;
+        max-width: 24rem;
+    }
+
+    #sobremim {
+        padding: 1.6rem;
+        border-radius: 2rem;
+    }
+
+    .contato-botoes a {
+        font-size: 1.3rem;
     }
 }

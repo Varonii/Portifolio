@@ -167,6 +167,21 @@ footer {
 
 }
 
+@media (max-width: 1024px) {
+    header {
+        padding: 2rem 4rem;
+    }
+
+    main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    footer {
+        padding: 3.5rem 4rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -202,5 +217,33 @@ footer {
         gap: 1.5rem;
         padding: 3rem 2rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.2rem 1.5rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    .navbtn {
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    h1, h2 {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+    }
+
+    footer {
+        padding: 2.5rem 1.5rem;
     }
 }

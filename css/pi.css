@@ -72,3 +72,42 @@ p {
     box-shadow: .6rem .6rem 1.5rem rgba(26, 46, 53, 0.15);
 }
 
+@media (max-width: 1024px) {
+    .layout-materias {
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+    .box-materia {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .voltar {
+        margin-left: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .layout-materias {
+        margin-right: 0;
+        margin-top: 3rem;
+    }
+
+    .box-materia {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-materia {
+        padding: 1.6rem;
+    }
+
+    .box-materia p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+}
+
