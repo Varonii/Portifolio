@@ -1,20 +1,3 @@
-// function SmoothScrollWithOffset() {
-//     const links = document.querySelectorAll('a[href^="#"]');
-//     links.forEach(link => {
-//         link.addEventListener('click', (e) => {
-//             e.preventDefault();
-//             const target = document.querySelector(link.getAttribute('href'));
-//             if (target) {
-//                 const offset = target.offsetTop - 80; // Adjust the offset as needed
-//                 window.scrollTo({
-//                     top: offset,
-//                     behavior: 'smooth'
-//                 });
-//             }
-//         });
-//     });
-// }
-
 //smooth scroll para sobre mim no index.html
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
@@ -138,3 +121,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });`
 `
+
+let modal = document.querySelector('.lightbox-modal');
+
+if (!modal) {
+    modal = document.createElement('div');
+    modal.classList.add('lightbox-modal');
+
+    const modalImg = document.createElement('img');
+    modalImg.classList.add('lightbox-img');
+
+    modalImg.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+
+    modal.appendChild(modalImg);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('imagem-relatorio')) {
+        const modalImg = modal.querySelector('.lightbox-img');
+        modalImg.src = event.target.src;
+        modalImg.alt = event.target.alt;
+        modal.classList.add('active');
+    }
+});
